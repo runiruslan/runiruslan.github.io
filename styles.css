@@ -202,14 +202,11 @@ hr{
     align-items: center;
 }
 
-.me_text p{
-  font-size: 20px;
-}
 
 .me_text{
-    width: 40vw;      
-    line-height: 1.65;               
-    color: #475569;                  
+    width: 40vw;           
+    color: #475569;                 
+    letter-spacing: 0.02em;  
     transform: translateY(100px) scale(1);
     padding-left: 12px;
     border-left: 3px solid rgba(245,179,1,0.25);
@@ -217,9 +214,14 @@ hr{
     border-left-width: 2px;
 }
 
+.me_text p{
+  font-size: 25px;
+}
+
 .buttons{
-    transform: translateY(150px) scale(1);
+    transform: translateY(100px) scale(1);
     opacity: 0;
+    margin-top: 50px;
 }
 
 
@@ -332,7 +334,7 @@ hr{
 }
 
 .slideSideAnimation{
-    animation: slideSide 3s ease forwards;
+    animation: slideSide 1s ease forwards;
 }
 
 
@@ -1055,8 +1057,23 @@ nav.active{
   .contact_item a{
     overflow-wrap: anywhere;
   }
+.circle{
+  position: relative;
+  text-align: center;
+  font-size: 28px;
+  height: 150px;          /* зона под круг */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 0 10px;
+  padding: 0;
 }
 
+.me_text p{
+  font-size: 17px;   /* было ~16px */
+  line-height: 1.7;  /* читаемее */
+}
+}
 
 
 

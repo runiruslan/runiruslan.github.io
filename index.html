@@ -401,31 +401,7 @@ filterButtons.forEach(btn => {
 
 
   
-  const grid2 = document.getElementById("works_grid");
 
-// 1) стартовая фиксация, чтобы было что анимировать
-grid2.style.height = grid2.scrollHeight + "px";
-
-let rafId = null;
-const ro = new ResizeObserver(() => {
-  // Если пришло много изменений подряд — сгладим в один кадр
-  console.log("grid2:", grid2);
-  cancelAnimationFrame(rafId);
-
-  rafId = requestAnimationFrame(() => {
-    const target = grid2.scrollHeight;
-    const current = grid2.getBoundingClientRect().height;
-    // фиксируем текущую высоту (px), чтобы transition сработал
-    grid2.style.height = current + "px";
-
-    // следующий кадр -> задаём новую высоту (пойдёт плавный transition)
-    requestAnimationFrame(() => {
-      grid2.style.height = target + "px";
-    });
-  });
-});
-
-ro.observe(grid2);
 </script>
 
 
