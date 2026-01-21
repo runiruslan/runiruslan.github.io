@@ -128,7 +128,8 @@ section:nth-child(2n){
 }
 
 .default_text{
-    font-size:larger;
+    margin: 0 0 14px;
+    font-size: 16px;
 }
 
 .text h1{
@@ -204,14 +205,15 @@ hr{
 
 .me_text{
     width: 40vw;
-    font-size: 1.15em;             
-    line-height: 1.8;               
+    font-size: 16px;             
+    line-height: 1.65;               
     color: #475569;                 
     letter-spacing: 0.02em;  
     transform: translateY(100px) scale(1);
-    padding-left: 24px;
+    padding-left: 12px;
     border-left: 3px solid rgba(245,179,1,0.25);
     opacity: 0;
+    border-left-width: 2px;
 }
 
 .buttons{
@@ -841,12 +843,10 @@ nav.active{
     padding: 230px 50px 10px;
     flex-direction: column;
   }
-  .burger {
-    display: block;
-  }
-  nav{
-    padding: 10px 16px;
-  }
+
+  .burger { display: block; }
+
+  nav{ padding: 10px 16px; }
 
   .navigation{
     position: fixed;
@@ -856,81 +856,143 @@ nav.active{
     flex-direction: column;
     display: none;
   }
-  .logo{
-    width: 30%;
-  }
+
+  .logo{ width: 30%; }
+
   .hero_contact_btn{
     right: auto;
     bottom: -100px;
   }
+
   .secondary{
-    width: 400px;
+    width: 100%;
+    max-width: 400px;
     font-size: 25px;
   }
+
   #about{
     flex-direction: column;
     padding: 40px 0px;
     padding-left: 10px;
+    padding-top: 20px;
   }
 
+  .circle{
+  position: relative;
+  text-align: center;
+  font-size: 28px;
+  height: 150px;          /* зона под круг */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 0 10px;
+  padding: 0;
+  z-index: 1;
+}
+
+  .circle::before{
+    content: "";
+    position: absolute;
+
+    width: 145px;
+    height: 145px;
+    border: 5px solid orange;
+    border-radius: 50%;
+    filter: drop-shadow(0 0 10px orange);
+
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+  }
+
+  .me_info{
+    width: 100%;
+    padding: 0 16px;
+    box-sizing: border-box;
+  }
+
+  .me_text{
+    width: 100%;
+    padding-left: 14px;
+    line-height: 1.6;
+    text-align: left;
+    overflow-wrap: anywhere;
+  }
+
+  /* ====== BUTTONS ====== */
   .buttons{
-    transform: translateY(70px);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 14px;
+    width: 100%;
+    max-width: 420px;
+    margin: 18px auto 0;
+    transform: translateY(100px);  /* меньше поднимаются */
     opacity: 0;
+    margin-top: 12px;
   }
 
+  .main_button,
+  .secondary_button{
+    width: 100%;
+    margin-left: 0;
+    padding: 14px 12px;
+    font-size: 16px;
+    line-height: 1.2;
+    min-height: 54px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-radius: 10px;
+  }
+
+  /* ускоряем анимацию только на мобиле */
   .buttons.slideSideAnimation{
     animation-duration: 2s;
   }
-}
-  .circle{
-    font-size: 40px;
-    padding: 70px 0px;
-  }
-  .circle::before{
-    width: 200px;
-    height: 200px;
-    top: -7.5px;
-    left: -20.5px ;
-  }
-  .me_text{
-    position: relative;
-    width: 95%;
-}
+
+  /* ====== SERVICES ====== */
   .cards{
-    grid-template-columns: 1fr; 
+    grid-template-columns: 1fr;
     gap: 20px;
-    justify-items: center;      
+    justify-items: center;
   }
-.cards .fourth_card{
-  padding-top: 70px; 
-}
+
+  .cards .fourth_card{
+    padding-top: 70px;
+  }
 
   .cards div{
-    width: 100%;                
+    width: 100%;
     max-width: 360px;
-    height: auto;     
-    height: 400px;          
+    height: 400px;
   }
-  .cards div h1{
-    margin-top: -10px;
-  }
+
+  .cards div h1{ margin-top: -10px; }
+
+  /* ====== MYWORKS ====== */
   #myworks{
     padding: 60px 16px;
     height: auto;
   }
 
   .awesome_head{
-  width: 100%;
-  max-width: 800px; 
-  margin: 0 auto 35px;
-  padding: 0 16px;  
-  box-sizing: border-box;
-}
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto 35px;
+    padding: 0 16px;
+    box-sizing: border-box;
+  }
 
   .works_grid{
     grid-template-columns: 1fr;
     grid-auto-rows: 220px;
     gap: 18px;
+
+    transition: height 0.35s ease;
+    overflow: hidden;
   }
 
   .work_item.big,
@@ -940,36 +1002,24 @@ nav.active{
     grid-row: auto;
   }
 
-  .works_grid{
-  transition: all 2s ease;
-  overflow: hidden; 
-  box-sizing: content-box;
-}
-  #contact{
-    padding: 60px 16px;
-  }
+  /* ====== CONTACT ====== */
+  #contact{ padding: 60px 16px; }
 
-  .contact_head{
-    margin-bottom: 32px;
-  }
+  .contact_head{ margin-bottom: 32px; }
 
   .contact_head h2{
-    font-size: 38px;      
+    font-size: 38px;
     line-height: 1.1;
   }
 
-  .contact_underline{
-    width: 70px;
-  }
+  .contact_underline{ width: 70px; }
 
   .contact_grid{
-    grid-template-columns: 1fr; 
+    grid-template-columns: 1fr;
     gap: 28px;
   }
 
-  .contact_left h3{
-    font-size: 18px;
-  }
+  .contact_left h3{ font-size: 18px; }
 
   .contact_item{
     font-size: 15px;
@@ -978,30 +1028,49 @@ nav.active{
   }
 
   .two_cols{
-    grid-template-columns: 1fr;  
+    grid-template-columns: 1fr;
     gap: 16px;
   }
-  .field{
-    margin-bottom: 18px; 
-  }
+
+  .field{ margin-bottom: 18px; }
 
   .field input,
   .field textarea{
     padding: 14px 14px;
-    font-size: 16px; 
+    font-size: 16px;
   }
 
   .send_btn{
-    width: 100%;       
+    width: 100%;
     padding: 16px 18px;
   }
+
   .socials{
     flex-wrap: wrap;
     gap: 12px;
   }
+
   .contact_item a{
-  overflow-wrap: anywhere;
+    overflow-wrap: anywhere;
+  }
 }
+.circle{
+  position: relative;
+  text-align: center;
+  font-size: 28px;
+  height: 150px;          /* зона под круг */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 0 10px;
+  padding: 0;
+}
+
+.me_text p{
+  font-size: 17px;   /* было ~16px */
+  line-height: 1.7;  /* читаемее */
+}
+
 
 
 
