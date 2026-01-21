@@ -872,6 +872,16 @@ nav.active{
     padding: 40px 0px;
     padding-left: 10px;
   }
+
+  .buttons{
+    transform: translateY(100px);
+    opacity: 0;
+  }
+
+  .buttons.slideSideAnimation{
+    animation-duration: 2s;
+  }
+}
   .circle{
     font-size: 40px;
     padding: 70px 0px;
@@ -880,7 +890,7 @@ nav.active{
     width: 200px;
     height: 200px;
     top: -7.5px;
-    left: -22.5px ;
+    left: -20.5px ;
   }
   .me_text{
     position: relative;
@@ -891,6 +901,10 @@ nav.active{
     gap: 20px;
     justify-items: center;      
   }
+.cards .fourth_card{
+  padding-top: 70px; 
+}
+
   .cards div{
     width: 100%;                
     max-width: 360px;
@@ -904,6 +918,14 @@ nav.active{
     padding: 60px 16px;
     height: auto;
   }
+
+  .awesome_head{
+  width: 100%;
+  max-width: 800px; 
+  margin: 0 auto 35px;
+  padding: 0 16px;  
+  box-sizing: border-box;
+}
 
   .works_grid{
     grid-template-columns: 1fr;
@@ -980,7 +1002,7 @@ nav.active{
   .contact_item a{
   overflow-wrap: anywhere;
 }
-}
+
 
 
     
