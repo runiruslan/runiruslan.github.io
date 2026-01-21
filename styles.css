@@ -42,7 +42,7 @@ body{
 }
 
 .logo{
-    width: 20%;
+    width: 40%;
 }
 
 .navigation{
@@ -839,8 +839,6 @@ nav.active{
 }
 
 
-
-
 @media (max-width: 760px) {
 
   #home{
@@ -861,7 +859,7 @@ nav.active{
     display: none;
   }
 
-  .logo{ width: 30%; }
+  .logo{ width: 60%; }
 
   .hero_contact_btn{
     right: auto;
