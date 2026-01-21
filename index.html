@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <title>Portfolio</title>
+</head>
+<body>
+    <nav id="nav">
+        <img class="logo" src="./images/imglogo.png" alt="">
+        <button class="burger" id="burger">
+          ☰
+        </button>
+        <div id="navigation" class="navigation">
+            <a href="#home">Home</a>
+            <a href="#about">About Me</a>
+            <a href="#services">Services</a>
+            <a href="#myworks">My works</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </nav>
+
+
+    <div class="main">
+
+        <section id="home">
+          
+            <video class="home_bg" autoplay muted loop playsinline>
+              <source src="./images/whitenetwork.mp4" type="video/mp4">
+            </video>
+            <div class="text">
+              <span class="hero_badge">WEB DEVELOPER</span>
+                <h1>
+                Ruslan Nikolaienko</h1>
+            <p class="secondary">
+              Web Developer & UI Enthusiast<br>
+              Personal portfolio of selected projects
+            </p>
+            <a href="#contact" class="hero_contact_btn">Here me</a>
+            </div>
+        </section>
+
+
+        <section id="about">
+
+            <div class="circle">
+                About me
+            </div>
+        <div class="me_info">
+            <div class="me_text"> 
+                <p class="default_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque id assumenda rem quis delectus maiores voluptatem, commodi, amet ratione in itaque quam quasi. Id itaque eaque hic deserunt tenetur consectetur.</p>
+                <p class="default_text">subobra tiksubobratik
+subobr atiksubobrat iksubobratiksub obratiksubobratiksubobratik</p>
+            </div>
+
+            <div class="buttons">
+                <a href="#myworks" class="main_button">View works</a>
+                <a class="secondary_button" id="downloadCV" href="./images/Lebenslauf (2).pdf" download>
+  Download CV
+</a>
+            </div>
+
+        </div>
+        </section>
+
+
+        <section id="services">
+
+                <div class="services_text">
+                    <h2>Services</h2>
+                    <hr>
+                    <p>From frontend development to responsive design and UI/UX optimization</p>
+                </div>
+
+                <div class="cards">
+                    <div>
+
+                        <h1>Frontend Development</h1>
+                        <p>Building responsive and interactive user interfaces using modern HTML, CSS, and JavaScript with a focus on clean code and smooth UX.</p>
+                    </div>
+                    <div>                      
+                        <h1>Backend Basics</h1>
+                        <p>Connecting frontend with backend services, handling APIs, forms, and basic server-side logic.</p></div>
+                    <div>                        
+                        <h1>Responsive Design</h1>
+                        <p>Creating layouts that adapt seamlessly to all screen sizes — desktop, tablet, and mobile — ensuring consistent experience.</p></div>
+                    <div>                        
+                        <h1>UI / UX & Performance</h1>
+                        <p>Designing clean, minimal interfaces with attention to typography, spacing, and visual hierarchy.</p></div>
+                </div>
+
+        </section>
+
+
+        <section id="myworks">
+            <div class="awesome_head">
+            <h2>My Works</h2>
+            <hr class="awesome_hr">
+    <p class="awesome_sub">
+      A selection of my recent projects — branding, UI, and web design.
+    </p>
+  </div>
+
+  <div class="awesome_filters" role="tablist" aria-label="Portfolio filters">
+    <button class="filter_btn active" data-filter="all" type="button">All</button>
+    <button class="filter_btn" data-filter="branding" type="button">Branding Goals</button>
+    <button class="filter_btn" data-filter="photo" type="button">Photography</button>
+    <button class="filter_btn" data-filter="ui" type="button">True Perfection</button>
+    <button class="filter_btn" data-filter="web" type="button">Web Design</button>
+  </div>
+
+  <div id="works_grid" class="works_grid">
+    
+    <a class="work_item big" href="#" data-category="branding">
+      <img src=" " alt="Project 1">
+      <span class="work_overlay">
+        <span class="work_title">Coffee Branding</span>
+        <span class="work_tag">Branding Goals</span>
+      </span>
+    </a>
+
+    <a class="work_item" href="#" data-category="photo">
+      <img src=" " alt="Project 2">
+      <span class="work_overlay">
+        <span class="work_title">Product Shot</span>
+        <span class="work_tag">Photography</span>
+      </span>
+    </a>
+
+    <a class="work_item" href="#" data-category="ui">
+      <img src=" " alt="Project 3">
+      <span class="work_overlay">
+        <span class="work_title">UI Mock</span>
+        <span class="work_tag">True Perfection</span>
+      </span>
+    </a>
+
+    <a class="work_item tall" href="#" data-category="web">
+      <img src=" " alt="Project 4">
+      <span class="work_overlay">
+        <span class="work_title">Landing Page</span>
+        <span class="work_tag">Web Design</span>
+      </span>
+    </a>
+
+    <a class="work_item" href="#" data-category="branding">
+      <img src=" " alt="Project 5">
+      <span class="work_overlay">
+        <span class="work_title">Poster</span>
+        <span class="work_tag">Branding Goals</span>
+      </span>
+    </a>
+
+    <a class="work_item wide" href="#" data-category="web">
+      <img src=" " alt="Project 6">
+      <span class="work_overlay">
+        <span class="work_title">E-commerce</span>
+        <span class="work_tag">Web Design</span>
+      </span>
+    </a>
+  </div>
+        </section>
+
+
+
+
+        <section id="contact">
+              <div class="contact_head">
+    <h2>Contact Me</h2>
+    <div class="contact_underline"></div>
+  </div>
+
+  <div class="contact_grid">
+    
+    <div class="contact_left">
+      <h3>Contact info</h3>
+
+      <div class="contact_item">
+        <span class="ci_icon">📍</span>
+        <span>Germany, Uelzen</span>
+      </div>
+
+      <div class="contact_item">
+        <span class="ci_icon">✉️</span>
+        <a href="mailto:yourmail@gmail.com">ruslan06runi@gmail.com</a>
+      </div>
+
+      <div class="contact_item">
+        <span class="ci_icon">📞</span>
+        <a href="tel:+0000000000">+49 1605810177</a>
+      </div>
+
+      <div class="contact_item">
+        <span class="ci_icon">🌐</span>
+        <a href="#" target="_blank" rel="noreferrer">www.myportfolio.com</a>
+      </div>
+
+      <div class="follow_block">
+        <h4>Follow Me</h4>
+        <div class="socials">
+
+
+                <a class="social_btn" href="https://www.instagram.com/pyssslann/" target="_blank" aria-label="Instagram">
+                    <svg viewBox="0 0 24 24">
+                    <path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5zm10 2H7a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3zm-5 3a5 5 0 1 1 0 10 5 5 0 0 1 0-10zm0 2a3 3 0 1 0 0 6 3 3 0 0 0 0-6zm5.5-.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"/>
+                    </svg>
+                </a>
+
+                <!--Telegram-->
+                <a class="social_btn" href="https://t.me/pyssslann" target="_blank" aria-label="Telegram">
+                    <svg viewBox="0 0 24 24">
+                    <path d="M22 3L2.9 10.4c-1 .4-.9 1.8.2 2.1l4.9 1.5 1.9 5.8c.3 1 1.6 1.2 2.2.4l2.7-3.4 5.6 4.1c.9.6 2.1.1 2.3-1l3-15.4c.2-1.1-.9-2-2-1.6z"/>
+                    </svg>
+                </a>
+
+                <!--WhatsApp-->
+                <a class="social_btn" href="https://wa.me/qr/ZPPJMFUD64X6A1" target="_blank" aria-label="WhatsApp">
+                    <svg viewBox="0 0 24 24">
+                    <path d="M12 2a10 10 0 0 0-8.4 15.4L2 22l4.8-1.5A10 10 0 1 0 12 2zm0 2a8 8 0 0 1 0 16 7.9 7.9 0 0 1-4-1.1l-.5-.3-2.8.9.9-2.7-.3-.5A8 8 0 0 1 12 4zm4.2 9.6c-.2-.1-1.2-.6-1.4-.7-.2-.1-.4-.1-.5.1l-.6.7c-.1.2-.3.2-.5.1a6.6 6.6 0 0 1-3-2.6c-.2-.3 0-.4.1-.5l.4-.5c.1-.1.1-.3.1-.4l-.6-1.4c-.2-.4-.4-.4-.6-.4h-.5c-.2 0-.4.1-.6.3-.2.2-.8.8-.8 2s.8 2.3.9 2.5a9.4 9.4 0 0 0 3.6 3.2c.4.2.7.3 1 .4.4.1.8.1 1.1.1.3 0 1-.4 1.2-.8.2-.4.2-.8.1-.9z"/>
+                    </svg>
+                </a>
+        </div>
+      </div>
+    </div>
+
+<!--form -->
+<form class="contact_form" id="contactForm">
+  <label class="field">
+    <span class="label">NAME</span>
+    <input id="name" type="text" placeholder="Type your name" required />
+  </label>
+
+  <div class="two_cols">
+    <label class="field">
+      <span class="label">PHONE NUMBER</span>
+      <input id="phone" type="tel" placeholder="Type your phone number" />
+    </label>
+
+    <label class="field">
+      <span class="label">EMAIL</span>
+      <input id="email" type="email" placeholder="Type your email address" required />
+    </label>
+  </div>
+
+  <label class="field">
+    <span class="label">YOUR MESSAGE</span>
+    <textarea id="message" rows="6" placeholder="Type your message here" required></textarea>
+  </label>
+
+  <button class="send_btn" type="submit">SEND MESSAGE</button>
+</form>
+
+</section>
+
+
+    <script>
+
+        const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('scaleInAnimation');
+            observer.unobserve(entry.target); // анимация один раз
+        }
+    });
+}, {
+    threshold: 0.2
+});
+
+document.querySelectorAll('.cards').forEach(el => observer.observe(el));
+
+
+const observer2 = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('slideSideAnimation');
+            observer2.unobserve(entry.target); // анимация один раз
+        }
+    });
+}, {
+    threshold: 0.2
+});
+
+document.querySelectorAll('.me_text').forEach(el => observer2.observe(el));
+document.querySelectorAll('.buttons').forEach(el => observer2.observe(el));
+
+
+
+
+//Анимация появляния работ//
+
+
+const filterButtons = document.querySelectorAll(".filter_btn");
+const grid = document.querySelector(".works_grid");
+const items = [...document.querySelectorAll(".work_item")];
+
+filterButtons.forEach(btn => {
+  btn.addEventListener("click", () => {
+    filterButtons.forEach(b => b.classList.remove("active"));
+    btn.classList.add("active");
+    const filter = btn.dataset.filter;
+
+    // плавно скрываем все
+    items.forEach(el => {
+      el.classList.add("is_hidden");
+      el.classList.remove("is_gone");
+    });
+
+    // после исчезновения перестраиваем и показываем нужные
+    setTimeout(() => {
+      const show = [], hide = [];
+      items.forEach(el =>
+        (filter === "all" || el.dataset.category === filter ? show : hide).push(el)
+      );
+
+      [...show, ...hide].forEach(el => grid.appendChild(el));
+      show.forEach(el => {
+  el.getBoundingClientRect(); 
+  el.classList.remove("is_hidden");
+});
+      hide.forEach(el => el.classList.add("is_gone"));
+    }, 450); 
+  });
+});
+
+
+
+  const TO_EMAIL = "ruslan06runi@gmail.com";
+
+  document.getElementById("contactForm").addEventListener("submit", (e) => {
+    e.preventDefault();
+
+    const name = document.getElementById("name").value.trim();
+    const phone = document.getElementById("phone").value.trim();
+    const email = document.getElementById("email").value.trim();
+    const message = document.getElementById("message").value.trim();
+
+    const subject = encodeURIComponent("New message from portfolio");
+    const body = encodeURIComponent(
+      `Name: ${name}\n` +
+      `Email: ${email}\n` +
+      `Phone: ${phone}\n\n` +
+      `Message:\n${message}\n`
+    );
+
+    window.location.href = `mailto:${TO_EMAIL}?subject=${subject}&body=${body}`;
+  });
+
+
+        
+    </script>
+
+
+<script>
+
+
+  const navLinks = document.querySelectorAll(".navigation a");
+  const sections = document.querySelectorAll("section[id]");
+
+  // ===== ACTIVE ON CLICK =====
+  navLinks.forEach(link => {
+    link.addEventListener("click", () => {
+      navLinks.forEach(l => l.classList.remove("active"));
+      link.classList.add("active");
+    });
+  });
+
+  // ===== ACTIVE ON SCROLL =====
+  const observer3 = new IntersectionObserver(
+    (entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          const id = entry.target.id;
+          navLinks.forEach(link => {
+            link.classList.toggle(
+              "active",
+              link.getAttribute("href") === `#${id}`
+            );
+          });
+        }
+      });
+    },
+    {
+      threshold: 0.55
+    }
+  );
+
+  sections.forEach(section => observer3.observe(section));
+
+  
+//burger
+  const burger = document.getElementById('burger');
+  const navigation = document.getElementById('navigation');
+  const nav = document.getElementById('nav');
+  burger.addEventListener('click', () => {
+    navigation.classList.toggle('active');
+    nav.classList.toggle('active');
+  });
+
+
+  
+  const grid2 = document.getElementById("works_grid");
+
+// 1) стартовая фиксация, чтобы было что анимировать
+grid2.style.height = grid2.scrollHeight + "px";
+
+let rafId = null;
+const ro = new ResizeObserver(() => {
+  // Если пришло много изменений подряд — сгладим в один кадр
+  console.log("grid2:", grid2);
+  cancelAnimationFrame(rafId);
+
+  rafId = requestAnimationFrame(() => {
+    const target = grid2.scrollHeight;
+    const current = grid2.getBoundingClientRect().height;
+    // фиксируем текущую высоту (px), чтобы transition сработал
+    grid2.style.height = current + "px";
+
+    // следующий кадр -> задаём новую высоту (пойдёт плавный transition)
+    requestAnimationFrame(() => {
+      grid2.style.height = target + "px";
+    });
+  });
+});
+
+ro.observe(grid2);
+</script>
+
+
+    
+</body>
+</html>
