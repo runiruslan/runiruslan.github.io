@@ -874,7 +874,7 @@ nav.active{
   }
 
   .buttons{
-    transform: translateY(100px);
+    transform: translateY(70px);
     opacity: 0;
   }
 
