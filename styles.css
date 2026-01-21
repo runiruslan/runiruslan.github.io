@@ -202,13 +202,14 @@ hr{
     align-items: center;
 }
 
+.me_text p{
+  font-size: 20px;
+}
 
 .me_text{
-    width: 40vw;
-    font-size: 16px;             
+    width: 40vw;      
     line-height: 1.65;               
-    color: #475569;                 
-    letter-spacing: 0.02em;  
+    color: #475569;                  
     transform: translateY(100px) scale(1);
     padding-left: 12px;
     border-left: 3px solid rgba(245,179,1,0.25);
@@ -672,6 +673,7 @@ hr{
   .contact_head h2{ font-size: 46px; }
 }
 
+
 .social_btn svg{
   width: 18px;
   height: 18px;
@@ -1054,22 +1056,7 @@ nav.active{
     overflow-wrap: anywhere;
   }
 }
-.circle{
-  position: relative;
-  text-align: center;
-  font-size: 28px;
-  height: 150px;          /* зона под круг */
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 0 0 10px;
-  padding: 0;
-}
 
-.me_text p{
-  font-size: 17px;   /* было ~16px */
-  line-height: 1.7;  /* читаемее */
-}
 
 
 
