@@ -844,7 +844,7 @@ nav.active{
 @media (max-width: 760px) {
 
   #home{
-    padding: 230px 50px 10px;
+    padding: 230px 20px 10px;
     flex-direction: column;
   }
 
@@ -868,10 +868,13 @@ nav.active{
     bottom: -100px;
   }
 
+  .text h1{
+    font-size: 60px;
+  }
   .secondary{
     width: 100%;
     max-width: 400px;
-    font-size: 25px;
+    font-size: 20px;
   }
 
   #about{
@@ -894,21 +897,20 @@ nav.active{
   z-index: 1;
 }
 
-  .circle::before{
-    content: "";
-    position: absolute;
+.circle::before{
+  content: "";
+  position: absolute;
 
-    width: 145px;
-    height: 145px;
-    border: 5px solid orange;
-    border-radius: 50%;
-    filter: drop-shadow(0 0 10px orange);
-
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    z-index: -1;
-  }
+  width: 145px;
+  height: 145px;
+  border: 5px solid orange;
+  border-radius: 50%;
+  filter: drop-shadow(0 0 10px orange);
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+}
 
   .me_info{
     width: 100%;
